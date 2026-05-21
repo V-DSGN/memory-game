@@ -2,38 +2,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardsArray = [
   {
     id: 1,
-    img: '/card-1-1.png', crustName: "Margherita"
+    img: '/img/card-1-1.png', crustName: "Margherita"
   },
   {
     id: 1,
-    img: '/card-1-2.png', crustName: "Five Cheeses"
+    img: '/img/card-1-2.png', crustName: "Five Cheeses"
   },
 
   {
     id: 2,
-    img: '/card-2-1.png', crustName: "Napoletana"
+    img: '/img/card-2-1.png', crustName: "Napoletana"
   },
   {
     id: 2,
-    img: '/card-2-2.png', crustName: "Tonno & Cipollo"
+    img: '/img/card-2-2.png', crustName: "Tonno & Cipollo"
   },
 
   {
     id: 3,
-    img: '/card-3-1.png', crustName: "Pepperoni" 
+    img: '/img/card-3-1.png', crustName: "Pepperoni" 
   },
   {
     id: 3,
-    img: '/card-3-2.png', crustName: "Ham & Pineapple"
+    img: '/img/card-3-2.png', crustName: "Ham & Pineapple"
   },
 
   {
     id: 4,
-    img: '/card-4-1.png', crustName: "Noduja (Vegan)"
+    img: '/img/card-4-1.png', crustName: "Noduja (Vegan)"
   },
   {
     id: 4,
-    img: '/card-4-2.png', crustName: "Marinara"
+    img: '/img/card-4-2.png', crustName: "Marinara"
   }
     ];
     const gameContainer = document.getElementById('game-container');
