@@ -1,4 +1,5 @@
-const cardsArray = [
+document.addEventListener('load', () => {
+    const cardsArray = [
   {
     id: 1,
     img: 'https://cdn.prod.website-files.com/6a0eeedccf84ccc592f56b66/6a0ef04b41932edd925a41c2_card-1-1.png', crustName: "Margherita"
@@ -272,9 +273,6 @@ const cardsArray = [
 
     
 
-window.addEventListener("load", () => {
-  shuffle(cardsArray);
-  cardsArray.forEach(card =>
-    gameContainer.appendChild(createCard(card))
-  );
+    shuffle(cardsArray);
+    cardsArray.forEach(card => gameContainer.appendChild(createCard(card)));
 });
