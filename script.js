@@ -1,3 +1,5 @@
+window.addEventListener("load", () => {
+  generateGame();},
 document.addEventListener('DOMContentLoaded', () => {
     const cardsArray = [
   {
