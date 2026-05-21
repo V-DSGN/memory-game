@@ -272,9 +272,9 @@ const cardsArray = [
 
     
 
-    shuffle(cardsArray);
-    cardsArray.forEach(card => gameContainer.appendChild(createCard(card)));
-});
 window.addEventListener("load", () => {
-  generateGame();
+  shuffle(cardsArray);
+  cardsArray.forEach(card =>
+    gameContainer.appendChild(createCard(card))
+  );
 });
