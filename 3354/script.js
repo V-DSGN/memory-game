@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const BASE_PATH = 'https://cdn.jsdelivr.net/gh/V-DSGN/memory-game@main/3354/
+    const BASE_PATH = 'https://cdn.jsdelivr.net/gh/V-DSGN/memory-game@main/3354/'
     const cardsArray = [
   {
     id: 1,
