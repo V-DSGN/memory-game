@@ -1,40 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const BASE_PATH = 'https://cdn.jsdelivr.net/gh/V-DSGN/memory-game@main/3354/img/';
     const cardsArray = [
   {
     id: 1,
-    img: 'card-1-1.png', crustName: "Margherita"
+    img: 'https://cdn.prod.website-files.com/6a0eeedccf84ccc592f56b66/6a0ef04b41932edd925a41c2_card-1-1.png', crustName: "Margherita"
   },
   {
     id: 1,
-    img: 'card-1-2.png', crustName: "Five Cheeses"
+    img: 'https://cdn.prod.website-files.com/6a0eeedccf84ccc592f56b66/6a0ef04b9b4a6a6599530b9a_card-1-2.png', crustName: "Five Cheeses"
   },
 
   {
     id: 2,
-    img: 'card-2-1.png', crustName: "Napoletana"
+    img: 'https://cdn.prod.website-files.com/6a0eeedccf84ccc592f56b66/6a0ef04bd29e0661dc228446_card-2-1.png', crustName: "Napoletana"
   },
   {
     id: 2,
-    img: 'card-2-2.png', crustName: "Tonno & Cipollo"
+    img: 'https://cdn.prod.website-files.com/6a0eeedccf84ccc592f56b66/6a0ef04bb7f0a045faadce51_card-2-2.png', crustName: "Tonno & Cipollo"
   },
 
   {
     id: 3,
-    img: 'card-3-1.png', crustName: "Pepperoni" 
+    img: 'https://cdn.prod.website-files.com/6a0eeedccf84ccc592f56b66/6a0ef04b91816e07f6fcf04f_card-3-1.png', crustName: "Pepperoni" 
   },
   {
     id: 3,
-    img: 'card-3-2.png', crustName: "Ham & Pineapple"
+    img: 'https://cdn.prod.website-files.com/6a0eeedccf84ccc592f56b66/6a0ef04b54fd72aab0062943_card-3-2.png', crustName: "Ham & Pineapple"
   },
 
   {
     id: 4,
-    img: 'card-4-1.png', crustName: "Noduja (Vegan)"
+    img: 'https://cdn.prod.website-files.com/6a0eeedccf84ccc592f56b66/6a0ef04bdf316c5684a9d976_card-4-1.png', crustName: "Noduja (Vegan)"
   },
   {
     id: 4,
-    img: 'card-4-2.png', crustName: "Marinara"
+    img: 'https://cdn.prod.website-files.com/6a0eeedccf84ccc592f56b66/6a0ef04baaeb4c0d227c9615_card-4-2.png', crustName: "Marinara"
   }
     ];
     const gameContainer = document.getElementById('game-container');
@@ -78,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardElement.dataset.crust = card.crustName;
 
         const frontFace = document.createElement('img');
-        frontFace.src = './img/logo.png';  // Adjust path if necessary
+        frontFace.src = 'https://cdn.prod.website-files.com/6a0eeedccf84ccc592f56b66/6a0ef5c83e9ed8b159e4cd9a_logo.png';  // Adjust path if necessary
         frontFace.className = 'front-face';
 
         const backFace = document.createElement('img');
