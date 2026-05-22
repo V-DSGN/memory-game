@@ -1,39 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const SCRIPT_PATH = document.currentScript.src;
+    const BASE_PATH = SCRIPT_PATH.substring(0, SCRIPT_PATH.lastIndexOf('/') + 1);
     const cardsArray = [
   {
     id: 1,
-    img: './card-1-1.png', crustName: "Margherita"
+    img: 'card-1-1.png', crustName: "Margherita"
   },
   {
     id: 1,
-    img: './card-1-2.png', crustName: "Five Cheeses"
+    img: 'card-1-2.png', crustName: "Five Cheeses"
   },
 
   {
     id: 2,
-    img: './card-2-1.png', crustName: "Napoletana"
+    img: 'card-2-1.png', crustName: "Napoletana"
   },
   {
     id: 2,
-    img: './card-2-2.png', crustName: "Tonno & Cipollo"
+    img: 'card-2-2.png', crustName: "Tonno & Cipollo"
   },
 
   {
     id: 3,
-    img: './card-3-1.png', crustName: "Pepperoni" 
+    img: 'card-3-1.png', crustName: "Pepperoni" 
   },
   {
     id: 3,
-    img: './card-3-2.png', crustName: "Ham & Pineapple"
+    img: 'card-3-2.png', crustName: "Ham & Pineapple"
   },
 
   {
     id: 4,
-    img: './card-4-1.png', crustName: "Noduja (Vegan)"
+    img: 'card-4-1.png', crustName: "Noduja (Vegan)"
   },
   {
     id: 4,
-    img: './card-4-2.png', crustName: "Marinara"
+    img: 'card-4-2.png', crustName: "Marinara"
   }
     ];
     const gameContainer = document.getElementById('game-container');
@@ -77,11 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
         cardElement.dataset.crust = card.crustName;
 
         const frontFace = document.createElement('img');
-        frontFace.src = './logo.png';  // Adjust path if necessary
+        frontFace.src = 'BASE_PATH + logo.png';  // Adjust path if necessary
         frontFace.className = 'front-face';
 
         const backFace = document.createElement('img');
-        backFace.src = card.img;  // Adjust path if necessary
+        backFace.src = BASE_PATH + card.img;  // Adjust path if necessary
         backFace.className = 'back-face';
 
         cardElement.appendChild(frontFace);
