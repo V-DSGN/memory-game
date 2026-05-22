@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createCard(card) {
         const cardElement = document.createElement('div');
         cardElement.classList.add('card');
-        cardElement.dataset.id = BASE_PATH + card.id;
+        cardElement.dataset.id = card.id;
         cardElement.dataset.crust = card.crustName;
 
         const frontFace = document.createElement('img');
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         frontFace.className = 'front-face';
 
         const backFace = document.createElement('img');
-        backFace.src = card.img;  // Adjust path if necessary
+        backFace.src = BASE_PATH + card.img;  // Adjust path if necessary
         backFace.className = 'back-face';
 
         cardElement.appendChild(frontFace);
