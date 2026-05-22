@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardElement.dataset.crust = card.crustName;
 
         const frontFace = document.createElement('img');
-        frontFace.src = 'BASE_PATH + logo.png';  // Adjust path if necessary
+        frontFace.src = BASE_PATH + 'logo.png';  // Adjust path if necessary
         frontFace.className = 'front-face';
 
         const backFace = document.createElement('img');
