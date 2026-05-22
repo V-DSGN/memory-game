@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
     const SCRIPT_PATH = document.currentScript.src;
     const BASE_PATH = SCRIPT_PATH.substring(0, SCRIPT_PATH.lastIndexOf('/') + 1);
+document.addEventListener('DOMContentLoaded', () => {
     const cardsArray = [
   {
     id: 1,
