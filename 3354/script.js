@@ -1,41 +1,50 @@
     const SCRIPT_PATH = document.currentScript.src;
     const BASE_PATH = SCRIPT_PATH.substring(0, SCRIPT_PATH.lastIndexOf('/') + 1);
 document.addEventListener('DOMContentLoaded', () => {
+    const cardName = window.MEMORY_GAME_CONFIG.cardName;
     const cardsArray = [
   {
     id: 1,
-    img: 'card-1-1.png', crustName: "Margherita"
+    img: 'card-1-1.png', 
+    cardName: cardName[0]
   },
   {
     id: 1,
-    img: 'card-1-2.png', crustName: "Five Cheeses"
+    img: 'card-1-2.png', 
+    cardName: cardName[1]
   },
 
   {
     id: 2,
-    img: 'card-2-1.png', crustName: "Napoletana"
+    img: 'card-2-1.png', 
+    cardName: cardName[2]
   },
   {
     id: 2,
-    img: 'card-2-2.png', crustName: "Tonno & Cipollo"
+    img: 'card-2-2.png', 
+    cardName: cardName[3]
   },
 
   {
     id: 3,
-    img: 'card-3-1.png', crustName: "Pepperoni" 
+    img: 'card-3-1.png', 
+    cardName: cardName[4]
   },
   {
     id: 3,
-    img: 'card-3-2.png', crustName: "Ham & Pineapple"
+    img: 'card-3-2.png', 
+    cardName: cardName[5]
   },
 
   {
     id: 4,
-    img: 'card-4-1.png', crustName: "Noduja (Vegan)"
+    img: 'card-4-1.png', 
+    cardName: cardName[6]
   },
   {
     id: 4,
-    img: 'card-4-2.png', crustName: "Marinara"
+    img: 'card-4-2.png', 
+    cardName: cardName[7]
   }
     ];
     const gameContainer = document.getElementById('game-container');
@@ -76,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardElement = document.createElement('div');
         cardElement.classList.add('card');
         cardElement.dataset.id = card.id;
-        cardElement.dataset.crust = card.crustName;
+        cardElement.dataset.crust = card.cardName;
 
         const frontFace = document.createElement('img');
         frontFace.src = BASE_PATH + 'logo.png';  // Adjust path if necessary
