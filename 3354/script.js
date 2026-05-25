@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardElement = document.createElement('div');
         cardElement.classList.add('card');
         cardElement.dataset.id = card.id;
-        cardElement.dataset.crust = card.cardName;
+        cardElement.dataset.name = card.cardName;
 
         const frontFace = document.createElement('img');
         frontFace.src = BASE_PATH + 'logo.png';  // Adjust path if necessary
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             firstCard = this;
 
             setTimeout(() => {
-                firstCard.dataset.label = `❔ ${firstCard.dataset.crust}`;
+                firstCard.dataset.label = `❔ ${firstCard.dataset.name}`;
                 firstCard.classList.add('selected');
             }, 250);
             
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         secondCard = this;
 
         setTimeout(() => {
-            secondCard.dataset.label = `❔ ${secondCard.dataset.crust}`;
+            secondCard.dataset.label = `❔ ${secondCard.dataset.name}`;
             secondCard.classList.add('selected');
         }, 250);
 
@@ -169,8 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             firstCard.classList.add('matched');
             secondCard.classList.add('matched');
-            firstCard.dataset.label = `✅ ${firstCard.dataset.crust}`;
-            secondCard.dataset.label = `✅ ${secondCard.dataset.crust}`;
+            firstCard.dataset.label = `✅ ${firstCard.dataset.name}`;
+            secondCard.dataset.label = `✅ ${secondCard.dataset.name}`;
             firstCard.removeEventListener('click', flipCard);
             secondCard.removeEventListener('click', flipCard);
             celebrateMatch(); 
@@ -188,8 +188,8 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             firstCard.classList.add('incorrect');
             secondCard.classList.add('incorrect');
-            firstCard.dataset.label = `❌ ${firstCard.dataset.crust}`;
-            secondCard.dataset.label = `❌ ${secondCard.dataset.crust}`;
+            firstCard.dataset.label = `❌ ${firstCard.dataset.name}`;
+            secondCard.dataset.label = `❌ ${secondCard.dataset.name}`;
 
             // Wait another 1000 milliseconds to flip them back
             setTimeout(() => {
